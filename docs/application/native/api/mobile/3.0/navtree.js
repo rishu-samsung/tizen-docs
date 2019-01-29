@@ -110,7 +110,7 @@ $(document).ready(function () {
     register_gnb_search_btn();
 
     var menujsElement = document.createElement("script");
-    menujsElement.src = "/api/menu.js";
+    menujsElement.src = "/js/menu.js";
     menujsElement.type = "text/javascript";
     document.getElementsByTagName("head")[0].appendChild(menujsElement);
 });
