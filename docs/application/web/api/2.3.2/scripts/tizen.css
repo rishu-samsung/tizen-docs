@@ -1,3 +1,7 @@
+@import "/css/navbar-api-reference.css";
+@import "/css/api-reference.css";
+@import "/css/api-reference-lnb.css";
+
 .attribute
 {
     padding-bottom:15px;
@@ -964,4 +968,13 @@ div.output > pre {
 
 div.api > div.supported-platforms {
     float: right;
+}
+
+.api {
+    margin-left: 380px !important;
+    padding-left: 50px !important;
+    padding-right: 66px !important;
+    border-left: solid 1px #d6d6d6;
+    margin-top: 80px !important;
+    padding-top: 14px !important;
 }

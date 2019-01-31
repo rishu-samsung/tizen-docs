@@ -102,17 +102,16 @@ $(document).ready(function () {
         dataType: "text",
         success: function(response){
             $('#nav-tree-contents').html(response);
+            var menujsElement = document.createElement("script");
+            menujsElement.src = "/js/menu.js";
+            menujsElement.type = "text/javascript";
+            document.getElementsByTagName("head")[0].appendChild(menujsElement);
         }
    });
     
     $('#nav-tree-contents').html("adsasdsd");
     
     register_gnb_search_btn();
-
-    var menujsElement = document.createElement("script");
-    menujsElement.src = "/js/menu.js";
-    menujsElement.type = "text/javascript";
-    document.getElementsByTagName("head")[0].appendChild(menujsElement);
 });
 function register_gnb_search_btn() {
   $('#gnb_search_btn').click(function() {
